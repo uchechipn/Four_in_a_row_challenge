@@ -10,6 +10,15 @@ public class Player {
 private String name;
     // Add other instance variable(s)
 private String playerNumber;
+private String color;
+
+public String getColor() {
+	return color;
+}
+
+public void setColor(String color) {
+	this.color = color;
+}
 
 // Question: should scanner be static or not?
 private  static Scanner scanner = new Scanner(System.in);// complete line
@@ -48,7 +57,8 @@ public int makeMove() {
      }
 }
 
+
 public String toString() {
-    return ("Player " + playerNumber + " is " + name);
+	return ("Player " + playerNumber + " is " + name + "and color is " + color + ".");
 }
 }
