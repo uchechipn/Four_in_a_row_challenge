@@ -59,8 +59,7 @@ public class Game {
 		do {
 			System.out.println("Enter player 2's name: ");
 			playerTwoName = scanner.nextLine();
-			System.out.println("Enter player 2's color: ");
-			players[1].setColor(scanner.nextLine());
+			
 
 			if (playerTwoName.equals(players[0].getName())) {
 				System.out.println("Error! Both players cannot have the same name.");
@@ -71,6 +70,8 @@ public class Game {
 		// described above.
 
 		players[1] = new Player(playerTwoName, "2");
+		System.out.println("Enter player 2's color: ");
+		players[1].setColor(scanner.nextLine());
 
 		// set up the board using the appropriate method
 		board.boardSetUp();
